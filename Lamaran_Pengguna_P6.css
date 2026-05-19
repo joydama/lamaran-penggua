@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* HEADER */
+header {
+  background: #0b1a2f;
+  color: white;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: gold;
+}
+
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-login {
+  border: 1px solid gold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: gold;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+/* LEFT PANEL */
+.left {
+  width: 35%;
+  background: linear-gradient(180deg, #0b1a2f, #122c4f);
+  color: white;
+  padding: 40px;
+}
+
+.left h2 {
+  color: gold;
+}
+
+/* FORM */
+.form-section {
+  width: 65%;
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus {
+  border-color: gold;
+  box-shadow: 0 0 5px rgba(255,215,0,0.5);
+}
+
+textarea {
+  height: 100px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #0b1a2f, #1f3f6d);
+  color: gold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #0b1a2f;
+  color: white;
+  padding: 40px 60px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 22%;
+}
+
+.footer-col h4 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.newsletter input {
+  padding: 10px;
+  width: 70%;
+}
+
+.newsletter button {
+  padding: 10px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+}
