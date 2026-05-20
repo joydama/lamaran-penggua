@@ -11,58 +11,131 @@ body {
 
 /* HEADER */
 header {
-  background: #0b1a2f;
-  color: white;
-  padding: 20px 60px;
+  background: #07162d;
+
+  padding: 10px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header h1 {
-  color: gold;
+/* AREA LOGO */
+.logo-area {
+  width: 70px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO KECIL */
+.logo {
+
+  width: 65px !important;
+  height: 65px !important;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  gap: 25px;
 }
 
 nav a {
-  margin: 0 15px;
   color: white;
   text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
-.btn-login {
-  border: 1px solid gold;
-  padding: 8px 16px;
-  border-radius: 6px;
+nav a:hover {
   color: gold;
+}
+
+/* BUTTON LOGIN */
+.btn-login {
+  padding: 8px 16px;
+
+  border: 1px solid gold;
+
+  border-radius: 8px;
+
+  color: gold;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: gold;
+  color: #07162d;
 }
 
 /* CONTAINER */
 .container {
-  display: flex;
+
   max-width: 1100px;
+
   margin: 50px auto;
+
+  display: flex;
+
   background: white;
-  border-radius: 16px;
+
+  border-radius: 20px;
+
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+
+  box-shadow: 0 10px 35px rgba(0,0,0,0.1);
 }
 
 /* LEFT PANEL */
 .left {
+
   width: 35%;
-  background: linear-gradient(180deg, #0b1a2f, #122c4f);
+
+  background: linear-gradient(
+    180deg,
+    #07162d,
+    #12345a
+  );
+
   color: white;
-  padding: 40px;
+
+  padding: 50px 35px;
 }
 
 .left h2 {
   color: gold;
+  margin-bottom: 15px;
+}
+
+.left p {
+  line-height: 1.8;
 }
 
 /* FORM */
 .form-section {
+
   width: 65%;
-  padding: 40px;
+
+  padding: 50px;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+  color: #07162d;
+}
+
+.form-section p {
+  margin-bottom: 25px;
+  color: gray;
 }
 
 .form-group {
@@ -71,46 +144,92 @@ nav a {
 
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
+  font-weight: 500;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
+
   width: 100%;
-  padding: 12px;
-  border-radius: 8px;
+
+  padding: 13px;
+
+  border-radius: 10px;
+
   border: 1px solid #ddd;
+
+  outline: none;
+
+  transition: 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
+
   border-color: gold;
-  box-shadow: 0 0 5px rgba(255,215,0,0.5);
+
+  box-shadow: 0 0 6px rgba(255,215,0,0.5);
 }
 
 textarea {
-  height: 100px;
+  height: 110px;
+  resize: none;
 }
 
+/* BUTTON */
 .btn-submit {
+
   width: 100%;
-  padding: 14px;
-  background: linear-gradient(90deg, #0b1a2f, #1f3f6d);
-  color: gold;
+
+  padding: 15px;
+
   border: none;
+
   border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #07162d,
+    #12345a
+  );
+
+  color: gold;
+
+  font-size: 16px;
+
   cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+
+  opacity: 0.9;
+
+  transform: translateY(-2px);
 }
 
 /* FOOTER */
 footer {
-  background: #0b1a2f;
+
+  margin-top: 60px;
+
+  background: #07162d;
+
   color: white;
-  padding: 40px 60px;
-  margin-top: 50px;
+
+  padding: 50px;
 }
 
 .footer-container {
+
   display: flex;
+
   justify-content: space-between;
+
   flex-wrap: wrap;
 }
 
@@ -119,31 +238,88 @@ footer {
 }
 
 .footer-col h4 {
+
   color: gold;
-  margin-bottom: 10px;
+
+  margin-bottom: 15px;
 }
 
+.footer-col p,
 .footer-col a {
-  display: block;
+
   color: #ccc;
-  margin-bottom: 6px;
+
   text-decoration: none;
+
+  margin-bottom: 8px;
+
+  display: block;
+}
+
+.footer-col a:hover {
+  color: gold;
 }
 
 .newsletter input {
-  padding: 10px;
+
   width: 70%;
+
+  padding: 10px;
+
+  border-radius: 6px;
+
+  border: none;
 }
 
 .newsletter button {
-  padding: 10px;
-  background: gold;
+
+  padding: 10px 14px;
+
   border: none;
+
+  border-radius: 6px;
+
+  background: gold;
+
   cursor: pointer;
 }
 
+/* COPYRIGHT */
 .copyright {
+
+  margin-top: 30px;
+
   text-align: center;
-  margin-top: 20px;
+
   color: #aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .left,
+  .form-section {
+    width: 100%;
+  }
+
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
 }

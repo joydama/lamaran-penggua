@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>LOKERIN - Apply Job</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>LOKERIN AJA - Apply Job</title>
 
   <!-- FONT -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
 
   <!-- CSS -->
-  <link rel="stylesheet" href="Lamaran_Pengguna_P6.css">
+  <link rel="stylesheet" href="Lamaran_Pengguna_P6.css"
+
 </head>
 
 <body>
@@ -18,16 +27,33 @@
 <!-- HEADER -->
 <header>
 
-  <h1>LOKERIN AJA</h1>
+  <!-- LOGO -->
+  <div class="logo-area">
 
+    <img
+      src="logo.png.png"
+      alt="Logo Lokerin"
+      class="logo"
+    >
+
+  </div>
+
+  <!-- MENU -->
   <nav>
+
     <a href="#">Home</a>
+
     <a href="#">Find Jobs</a>
+
     <a href="#">Companies</a>
+
     <a href="#">Career Tips</a>
+
     <a href="#">About</a>
+
   </nav>
 
+  <!-- LOGIN -->
   <a href="#" class="btn-login">
     Login
   </a>
@@ -206,17 +232,11 @@
 
       <h4>Pencari Kerja</h4>
 
-      <a href="#">
-        Cari Lowongan
-      </a>
+      <a href="#">Cari Lowongan</a>
 
-      <a href="#">
-        Tips Karier
-      </a>
+      <a href="#">Tips Karier</a>
 
-      <a href="#">
-        Buat CV
-      </a>
+      <a href="#">Buat CV</a>
 
     </div>
 
@@ -225,13 +245,9 @@
 
       <h4>Perusahaan</h4>
 
-      <a href="#">
-        Pasang Lowongan
-      </a>
+      <a href="#">Pasang Lowongan</a>
 
-      <a href="#">
-        Cari Talenta
-      </a>
+      <a href="#">Cari Talenta</a>
 
     </div>
 
@@ -264,7 +280,7 @@
 </footer>
 
 <!-- JS -->
-<script src="Lamaran_Pengguna_P6.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
